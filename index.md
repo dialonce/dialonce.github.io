@@ -128,7 +128,6 @@ Since DialOnce is already minified, please use these rules to not obsfuscate the
 
 {% highlight yaml %}
 -keep class com.dialonce.** { *; }
--dontwarn com.bugsnag.**
 {% endhighlight %}
 
 
