@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>{{ page.title }}</title>
+	
+	<link rel="stylesheet" href="/stylesheets/reset.css"/>
+	<link rel="stylesheet" href="/stylesheets/markdown.css"/>
+	<link rel="stylesheet" href="/stylesheets/styles.css"/>
+	<link rel="stylesheet" href="/octicons/octicons.css">
+
 	<meta name="author" content="Dial Once" />
-
-	<link rel="stylesheet" href="stylesheets/markdown.css"/>
-	<link rel="stylesheet" href="stylesheets/styles.css"/>
-
+	<meta name="description" content="{{ page.description }}"/>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
-<body class="markdown-body">
+<body>
 	<div class="wrapper">
 		{%include header.md%}
-	    <section>
+		{% assign index = nil %}
+		{% if page.url != "/index.html" %}
+			{% assign current = 'markdown-body' %}
+		{% else %}
+			{% assign current = 'wrapper' %}
+		{% endif %}
+	    <section class="{{ current }}">
 			{{ content }}
 		</section>
 		{%include footer.md%}
@@ -30,6 +39,6 @@
 			} catch(err) {}
 		</script>
 	</div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="/javascripts/scale.fix.js"></script>
   </body>
 </html>

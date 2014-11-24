@@ -1,0 +1,9 @@
+- name: Dial Once Android SDK
+  slug: dialonce-android-sdk
+  repo: http://github.com/dial-once/dialonce-android-sdk
+  support: http://github.com/dial-once/dialonce-android-sdk/issues
+
+- name: Dial Once API
+  slug: dialonce-api
+  repo: http://github.com/dial-once/dialonce-android-sdk
+  support: http://github.com/dial-once/dialonce-android-sdk/issues
