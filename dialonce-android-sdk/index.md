@@ -3,7 +3,7 @@ layout: default
 title: Dial Once Android SDK Documentation
 ---
 
-Dial Once Android SDK Documentation
+Android SDK Documentation
 ===================================
 
 [![Download](https://api.bintray.com/packages/dialonce/maven/dialonce-android/images/download.svg) ](https://bintray.com/dialonce/maven/dialonce-android/_latestVersion)
