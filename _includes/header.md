@@ -5,7 +5,7 @@
 				<img src="{{site.data.cdn.url}}img/dialonce-logo-128.png" alt="Dial Once"/>
 			</a>
 		</h1>
-		<span class="subtitle">developer()</span>
+		<span class="subtitle">developer</span>
 		<ul role="navigation">
 			{% for entry in site.data.projects %}
 				{% assign current = nil %}
