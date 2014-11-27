@@ -65,7 +65,7 @@ header .container ul li{
 
 header .container ul li.active a{
   padding-bottom: 1px;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #ffb54f;
 }
 
 section.wrapper .section1 {
@@ -129,6 +129,7 @@ section.wrapper .section2 ul{
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.5em;
+  max-width: 350px;
 }
 
 .highlight-module h2{
@@ -140,4 +141,10 @@ section.wrapper .section2 ul{
   font-size: 70px;
   width: 70px;
   height: 70px;
+}
+
+a.regular{
+  font-size: 14px !important;
+  border-bottom: 1px solid;
+  color: #4183c4 !important;
 }

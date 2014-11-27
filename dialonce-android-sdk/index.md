@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Dial Once Android SDK
+title: Dial Once Android SDK Documentation
 ---
 
-Dial Once Android SDK
-=====================
+Dial Once Android SDK Documentation
+===================================
 
 [![Download](https://api.bintray.com/packages/dialonce/maven/dialonce-android/images/download.svg) ](https://bintray.com/dialonce/maven/dialonce-android/_latestVersion)
 
 This document will guide you through the integration of the Dial Once SDK for Android.
+
+You can find more information about the Android SDK [on the dedicated page](/dialonce-android-sdk-specs/).
 
 Installation & Setup
 --------------------
