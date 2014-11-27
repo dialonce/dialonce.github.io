@@ -1,8 +1,11 @@
 <header>
 	<div class="container">
 		<h1>
-			<a href="/"><span class="bold">Dial Once</span> Developer</a>
+			<a href="/">
+				<img src="{{site.data.cdn.url}}img/dialonce-logo-128.png" alt="Dial Once"/>
+			</a>
 		</h1>
+		<span class="subtitle">Developer</span>
 		<ul role="navigation">
 			{% for entry in site.data.projects %}
 				{% assign current = nil %}

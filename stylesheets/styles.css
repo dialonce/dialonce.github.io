@@ -19,6 +19,12 @@ header{
   line-height: 25px;
 }
 
+header .subtitle{
+  font-size: 16px;
+  margin-left: 4px;
+  line-height: 32px;
+}
+
 a{
   text-decoration: none;
 }
@@ -32,8 +38,12 @@ header a{
   color: black;
 }
 
+header img{
+  display: inline;
+}
+
 header .container{
-  max-width: 980px;
+  max-width: 900px;
   margin-right: auto;
   margin-left: auto;
 }
