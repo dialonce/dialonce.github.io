@@ -98,9 +98,11 @@ section.wrapper .section2{
   background: #f2f2f2;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  overflow: hidden;
-  z-index: 1;
-  position: relative;
+}
+
+section.wrapper .section2 ul{
+  max-width: 900px;
+  margin:auto;
 }
 
 .separator{
