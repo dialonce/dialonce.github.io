@@ -9,9 +9,10 @@ Android SDK Specifications
 ### Table of Contents
 
 1.  [How it works](#how-does-it-work)
-2.  [Including the SDK](#how-to-include-the-sdk-into-my-app)
-3.  [Available platforms](#on-which-platform-the-dial-once-sdk-is-available)
-4.  [Permissions](#which-permissions-are-required)
+2.  [SDK Weight](#how-much-does-it-weight)
+3.  [Including the SDK](#how-to-include-the-sdk-into-my-app)
+4.  [Available platforms](#on-which-platform-the-dial-once-sdk-is-available)
+5.  [Permissions](#which-permissions-are-required)
 
 ## How does it work?
 The Dial Once SDK is included in your app and is running when the user makes various actions.  
@@ -25,6 +26,11 @@ Actions are:
 Dial Once uses these actions to launch himself and do some tasks like offering an improved customer service interface or updating his local database. Then it shuts himself down and is not present anymore in memory until the next action.
 
 > Dial Once does not run in background and do not make your app a battery-killer
+
+## How much does it weight?
+Right now, the Dial Once SDK weights exactly *54KB* without dependencies. Once included fully into your app (when you'll build it dependencies are fetched automatically) the total weight is around *64KB*.  
+
+Note that this is indicative and may change in near future, as we are constantly adding new features and improving it.
 
 ## How to include the SDK into my app?
 Installing the SDK is as simple as adding a line into your project.
