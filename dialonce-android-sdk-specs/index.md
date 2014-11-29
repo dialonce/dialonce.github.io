@@ -15,12 +15,10 @@ Android SDK Specifications
 5.  [Permissions](#which-permissions-are-required)
 
 ## How does it work?
-The Dial Once SDK is included in your app and is running when the user makes various actions.  
-
-Actions are:  
+The Dial Once SDK is included in your app and is only running when the user ones of these actions:  
 
 1. Calling a number
-2. Wiring the phone to the computer
+2. Wiring the phone to a power source
 3. Getting internet connectivity
 
 Dial Once uses these actions to launch himself and do some tasks like offering an improved customer service interface or updating his local database. Then it shuts himself down and is not present anymore in memory until the next action.
