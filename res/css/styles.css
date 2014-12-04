@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+  font-family: "Code";
+  src: url("/res/fonts/CODELight.otf");
+}
+@font-face {
+  font-family: "Code";
+  src: url("/res/fonts/CODEBold.otf");
+  font-weight: bold;
+}
+html, body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+}
+a {
+  text-decoration: none;
+  color: #555555;
+}
+a:hover {
+  color: #EB7405;
+}
+a.picto:before {
+  content: '\25b6';
+  color: #EB7405;
+  padding-right: 5px;
+}
+.button {
+  border: 1px solid #EB7405;
+  color: #FFF3E9;
+  padding: 7px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #EB7405;
+  text-align: center;
+}
+a.button:hover {
+  border: 1px solid #A24E00;
+  color: #FFFFFF;
+}
+.button.disabled {
+  border: 1px solid #EB7405;
+  color: #EB7405;
+  background-color: #FFF3E9;
+}
+.right {
+  float: right;
+}
+menu {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  height: 34px;
+}
+menu img {
+  margin-top: 4px;
+}
+header {
+  background-image: url('/res/img/girl.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: 'Code';
+  text-transform: uppercase;
+  padding: 130px 10px;
+  text-shadow: 0px 0px 10px #000;
+}
+header > * {
+  display: block;
+  max-width: 800px;
+  margin: auto;
+  color: #FFF;
+}
+header > h1 {
+  font-weight: normal;
+  font-size: 65px;
+  text-transform: uppercase;
+}
+header > a {
+  color: #278A6E;
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+.sdk {
+  position: relative;
+  padding: 40px 0px;
+}
+.sdk:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.15;
+  background-image: url('/res/img/texture.png');
+}
+.sdk .container {
+  display: table;
+  width: 100%;
+  max-width: 890px;
+}
+.sdk .container > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.icon {
+  margin: auto;
+  background-color: #EB7405;
+  border-radius: 50%;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  line-height: 96px;
+}
+.icon img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.home-body h2 {
+  font-family: 'Code';
+  text-transform: uppercase;
+  color: #000000;
+}
+.sdk h2 {
+  text-align: center;
+}
+.sdk a,
+.sdk .button {
+  display: block;
+  max-width: 140px;
+  margin: auto;
+}
+.api {
+  position: relative;
+  background-color: #EEEEEE;
+  padding: 40px 0px;
+}
+.api .container > * {
+  display: table;
+  padding: 10px;
+}
+.api .container > a:hover {
+  background-color: #D7D7D7;
+  color: inherit;
+}
+.api .container > * > div {
+  display: table-cell;
+}
+.api .icon {
+  display: inline-block;
+  background-color: #278A6E;
+  width: 50px;
+  height: 50px;
+}
+.api .icon img {
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: top;
+}
+.api .description {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.api h2 {
+  margin: 0px;
+}
+.api h2 span {
+  color: #EB7405;
+  font-family: Lato;
+  font-size: 11px;
+  vertical-align: super;
+  font-weight: normal;
+}
+.markdown-body{
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  width:600px;
+  margin:auto;
+}

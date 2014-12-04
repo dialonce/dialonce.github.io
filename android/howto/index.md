@@ -10,7 +10,7 @@ Android SDK Documentation
 
 This document will guide you through the integration of the Dial Once SDK for Android.
 
-You can find more information about the Android SDK [on the dedicated page](/dialonce-android-sdk-specs/).
+You can find more information about the Android SDK [on the dedicated page](/android/specs).
 
 Installation & Setup
 --------------------
