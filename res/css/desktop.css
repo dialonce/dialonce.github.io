@@ -42,3 +42,6 @@ header > a {
   max-width: 140px;
   margin: auto;
 }
+.api .container > * > div {
+  display: table-cell;
+}
