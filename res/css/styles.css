@@ -29,6 +29,9 @@ a.picto:before {
   color: #EB7405;
   padding-right: 5px;
 }
+img {
+  border: none;
+}
 .button {
   border: 1px solid #EB7405;
   color: #FFF3E9;
