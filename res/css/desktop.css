@@ -1,0 +1,44 @@
+header {
+  background-color: #555555;
+  background-image: url(/res/img/girl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 130px 10px;
+}
+header > h1 {
+  font-size: 65px;
+}
+header > a {
+  font-size: 35px;
+  color: #278A6E;
+}
+.icon {
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  line-height: 96px;
+}
+.icon img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.sdk .container {
+  display: table;
+  width: 100%;
+  max-width: 890px;
+}
+.sdk .container > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.sdk h2 {
+  text-align: center;
+}
+.sdk a,
+.sdk .button {
+  display: block;
+  max-width: 140px;
+  margin: auto;
+}

@@ -1,0 +1,65 @@
+header {
+  position: relative;
+  padding: 7vw 10px;
+  background-color: #278A6E;
+}
+header:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/res/img/chevrons.png);
+  background-position: center;
+  background-size: contain;
+  opacity: 0.1;
+}
+header > * {
+  position: relative;
+}
+header > h1 {
+  font-size: 7vw;
+}
+header > a {
+  font-size: 4vw;
+  color: #EB7405;
+}
+.icon {
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  line-height: 68px;
+}
+.icon img {
+  max-width: 70px;
+  max-height: 70px;
+}
+.sdk .container {
+  display: block;
+  max-width: 890px;
+}
+.sdk .container > div {
+  display: block;
+  position: relative;
+  padding: 10px 10px 10px 130px;
+  min-height: 100px;
+  max-width: 200px;
+  margin: auto;
+}
+.sdk .icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.sdk h2 {
+  margin: 5px 0px;
+}
+.sdk a {
+  display: block;
+  margin: auto;
+}
+.sdk .button {
+  display: inline-block;
+}

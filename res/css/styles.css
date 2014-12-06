@@ -1,15 +1,18 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,700);
+@import url('tablet.css') (max-width: 749px);
+@import url('mobile.css') (max-width: 499px);
+@import url('desktop.css') (min-width: 750px);
 @font-face {
   font-family: "Code";
-  src: url("/res/fonts/CODELight.otf");
+  src: url(/res/fonts/CODELight.otf);
 }
 @font-face {
   font-family: "Code";
-  src: url("/res/fonts/CODEBold.otf");
+  src: url(/res/fonts/CODEBold.otf);
   font-weight: bold;
 }
 html, body {
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
   margin: 0px;
   padding: 0px;
   color: #555555;
@@ -25,6 +28,9 @@ a.picto:before {
   content: '\25b6';
   color: #EB7405;
   padding-right: 5px;
+}
+img {
+  border: none;
 }
 .button {
   border: 1px solid #EB7405;
@@ -44,6 +50,18 @@ a.button:hover {
   color: #EB7405;
   background-color: #FFF3E9;
 }
+.icon {
+  margin: auto;
+  background-color: #EB7405;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+.home-body h2 {
+  font-family: 'Code', Lato;
+  text-transform: uppercase;
+  color: #000000;
+}
 .right {
   float: right;
 }
@@ -51,19 +69,13 @@ menu {
   max-width: 800px;
   margin: auto;
   padding: 10px;
-  height: 34px;
 }
 menu img {
   margin-top: 4px;
 }
 header {
-  background-image: url('/res/img/girl.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  font-family: 'Code';
+  font-family: 'Code', Lato;
   text-transform: uppercase;
-  padding: 130px 10px;
   text-shadow: 0px 0px 10px #000;
 }
 header > * {
@@ -73,15 +85,10 @@ header > * {
   color: #FFF;
 }
 header > h1 {
-  font-weight: normal;
-  font-size: 65px;
-  text-transform: uppercase;
+  font-weight: 100;
 }
 header > a {
-  color: #278A6E;
-  font-size: 35px;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 .container {
   position: relative;
@@ -100,46 +107,7 @@ header > a {
   left: 0;
   right: 0;
   opacity: 0.15;
-  background-image: url('/res/img/texture.png');
-}
-.sdk .container {
-  display: table;
-  width: 100%;
-  max-width: 890px;
-}
-.sdk .container > div {
-  display: table-cell;
-  vertical-align: top;
-}
-.icon {
-  margin: auto;
-  background-color: #EB7405;
-  border-radius: 50%;
-  padding: 20px;
-  width: 100px;
-  height: 100px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 60px;
-  line-height: 96px;
-}
-.icon img {
-  max-width: 100px;
-  max-height: 100px;
-}
-.home-body h2 {
-  font-family: 'Code';
-  text-transform: uppercase;
-  color: #000000;
-}
-.sdk h2 {
-  text-align: center;
-}
-.sdk a,
-.sdk .button {
-  display: block;
-  max-width: 140px;
-  margin: auto;
+  background-image: url(/res/img/texture.png);
 }
 .api {
   position: relative;
