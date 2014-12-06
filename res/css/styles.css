@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,700);
 @import url('tablet.css') (max-width: 749px);
 @import url('mobile.css') (max-width: 499px);
 @import url('desktop.css') (min-width: 750px);
@@ -55,7 +55,7 @@ a.button:hover {
   text-align: center;
 }
 .home-body h2 {
-  font-family: 'Code';
+  font-family: 'Code', Lato;
   text-transform: uppercase;
   color: #000000;
 }
@@ -71,7 +71,7 @@ menu img {
   margin-top: 4px;
 }
 header {
-  font-family: 'Code';
+  font-family: 'Code', Lato;
   text-transform: uppercase;
   text-shadow: 0px 0px 10px #000;
 }
@@ -82,10 +82,10 @@ header > * {
   color: #FFF;
 }
 header > h1 {
-  font-weight: normal;
+  font-weight: 100;
 }
 header > a {
-  font-weight: bold;
+  font-weight: 700;
 }
 .container {
   position: relative;
