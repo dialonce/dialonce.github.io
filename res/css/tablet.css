@@ -63,3 +63,6 @@ header > a {
 .sdk .button {
   display: inline-block;
 }
+.api .container > * > div {
+  display: table-cell;
+}
