@@ -32,7 +32,7 @@ Note that this is indicative and may change in near future, as we are constantly
 
 ## How to include the SDK into my app?
 Installing the SDK is as simple as adding a line into your project.
-Find a more technical explanation on the SDK page [the SDK page](/dialonce-android-sdk).
+Find a more technical explanation on the SDK page [the SDK page](/android/howto).
 
 ## On which platform the Dial Once SDK is available?
 For now, we only provide the SDK for Android phones, iOS and WP8 are coming soon.

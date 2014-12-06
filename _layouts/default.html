@@ -2,33 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
 	<title>{{ page.title }}</title>
-	
-	<link rel="stylesheet" href="/stylesheets/reset.css"/>
-	<link rel="stylesheet" href="/stylesheets/markdown.css"/>
-	<link rel="stylesheet" href="/stylesheets/styles.css"/>
-	<link rel="stylesheet" href="/octicons/octicons.css">
-
-	<meta name="author" content="Dial Once" />
-	<meta name="description" content="{{ page.description }}"/>
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+	<link rel="stylesheet" href="/res/css/markdown.css"/>
+	<link rel="stylesheet" href="/res/css/styles.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Dial Once">
+    <meta name="description" content="Welcome to the Dial Once documentation. Find how to use our SDK, API and much more.">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="{{site.data.cdn.url}}img/dialonce-icon-128.png" />
 </head>
-<body>
+<body cz-shortcut-listen="true">
 	<div class="wrapper">
-		{%include header.md%}
+		{%include header.html%}
 		{% assign index = nil %}
 		{% if page.url != "/index.html" %}
 			{% assign current = 'markdown-body' %}
 		{% else %}
-			{% assign current = 'wrapper' %}
+			{% assign current = 'home-body' %}
 		{% endif %}
 	    <section class="{{ current }}">
 			{{ content }}
 		</section>
-		{%include footer.md%}
 		
 		<script type="text/javascript">
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -41,6 +35,6 @@
 			} catch(err) {}
 		</script>
 	</div>
-    <script src="/javascripts/scale.fix.js"></script>
-  </body>
+    <script src="/res/js/scale.fix.js"></script>
+</body>
 </html>
