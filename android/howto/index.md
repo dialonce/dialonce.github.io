@@ -4,11 +4,6 @@ title: Dial Once Android SDK Documentation
 published: true
 ---
 
----
-layout: default
-title: Dial Once Android SDK Documentation
----
-
 Android SDK Documentation
 ===================================
 
