@@ -61,7 +61,7 @@ Then, add the Dial Once SDK as a project dependency.
 
 {% highlight javascript %}
 dependencies {
-    compile 'com.dialonce:dialonce-android:1.+'
+    compile 'com.dialonce:dialonce-android:+'
 }
 {% endhighlight %}
 
@@ -114,7 +114,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency>
   <groupId>com.dialonce</groupId>
   <artifactId>dialonce-android</artifactId>
-  <version>1.1</version>
+  <version>1.2.2</version>
   <type>aar</type>
 </dependency>
 {% endhighlight %}
