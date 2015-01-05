@@ -1,6 +1,12 @@
 ---
 layout: default
 title: Dial Once Android SDK Documentation
+published: true
+---
+
+---
+layout: default
+title: Dial Once Android SDK Documentation
 ---
 
 Android SDK Documentation
@@ -20,11 +26,10 @@ Installation & Setup
 1.  [Introduction](#introduction)
 2.  [Prerequisites](#prerequisites)
 3.  [Android versions](#android-versions)
-4.  [AndroidManifest.xml](#androidmanifest-xml)
-5.  [Installation](#installation)
+4.  [Installation](#installation)
   - [Gradle](#gradle-recommanded)
   - [Maven](#maven)
-6.  [Proguard](#proguard)
+5.  [Proguard](#proguard)
 
 ### Introduction
 
@@ -40,18 +45,6 @@ Before you start, be sure you have the following prerequisites:
 ### Android versions
 
 The Dial Once Android SDK supports Android 2.2+ (API Level 8) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min), but it must be compiled using Android 4.4 (API Level 20) or above as the [targetSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#target).
-
-### AndroidManifest.xml
-
-Inside the `<application>` tag add a new meta-data entry like this:
-
-{% highlight xml %}
-<meta-data
-    android:name="com.dialonce.sdk.API_KEY"
-    android:value="your_api_key_here" />
-{% endhighlight %}
-
-Replace the tag value with your api-key.
 
 ### Installation
 
@@ -75,6 +68,12 @@ Then, add the Dial Once SDK as a project dependency.
 dependencies {
     compile 'com.dialonce:dialonce-android:1.+'
 }
+{% endhighlight %}
+
+Finally, add the following line to your application class in the `onCreate` method.
+
+{% highlight java %}
+DialOnce.init(this, "your_api_key_here");
 {% endhighlight %}
 
 #### Maven
@@ -123,6 +122,12 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
   <version>1.1</version>
   <type>aar</type>
 </dependency>
+{% endhighlight %}
+
+Finally, add the following line to your application class in the `onCreate` method.
+
+{% highlight java %}
+DialOnce.init(this, "your_api_key_here");
 {% endhighlight %}
 
 ### ProGuard
