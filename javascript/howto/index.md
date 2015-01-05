@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Dial Once JS SDK Documentation
+title: Dial Once JS TAG Documentation
 published: true
 ---
 
-Dial Once JS SDK
+Dial Once JS TAG
 ================
 
-This document covers how to use the `Dial Once SDK` with the latest asynchronous syntax. With this version of the tracking code, you can also place the `Dial Once SDK` snippet higher in the page without delaying subsequent content from rendering.
+This document covers how to use the `Dial Once TAG` with the latest asynchronous syntax. With this version of the tracking code, you can also place the `Dial Once TAG` snippet higher in the page without delaying subsequent content from rendering.
 
 ### Installation guide
 
-The `Dial Once SDK` snippet is a small piece of JavaScript code that you paste into your pages.
+The `Dial Once TAG` snippet is a small piece of JavaScript code that you paste into your pages.
 
-To begin using the `Dial Once SDK`, paste the following JavaScript snippet into your website template page.
+To begin using the `Dial Once TAG`, paste the following JavaScript snippet into your website template page.
 
 {% highlight javascript %}
 <script type="text/javascript">
@@ -31,14 +31,14 @@ To begin using the `Dial Once SDK`, paste the following JavaScript snippet into 
 </script>
 {% endhighlight %}
 
-The snippet above represents the minimum configuration needed to use the SDK asynchronously.  
+The snippet above represents the minimum configuration needed to use the TAG asynchronously.  
 
 
-### SDK Options
+### TAG Options
 
 #### Geolocation
 
-To be able to geolocate users, just add the following option in the features list of the Dial Once SDK in the global _dialonceQ variable, by adding this line of code in the JS snippet: 
+To be able to geolocate users, just add the following option in the features list of the Dial Once TAG in the global _dialonceQ variable, by adding this line of code in the JS snippet: 
 
 {% highlight javascript %}
 _dialonceQ._enableFeatures = ['Geoloc'];
