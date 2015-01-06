@@ -17,9 +17,9 @@ To begin using the `Dial Once TAG`, paste the following JavaScript snippet into 
 
 {% highlight javascript %}
 <script type="text/javascript">
-    var _dialonceQ = _dialonceQ || {};
-    _dialonceQ._setAppID = 'XXX-XXX-XXX-XXX';
-    _dialonceQ._enableDevices = ['Mobile'];
+    var _dialonce = _dialonce || {};
+    _dialonce.setAppID = 'XXX-XXX-XXX-XXX';
+    _dialonce.enableDevices = ['Mobile'];
     (function() {
         var dialonce = document.createElement('script');
         dialonce.type = 'text/javascript';
@@ -41,5 +41,5 @@ The snippet above represents the minimum configuration needed to use the TAG asy
 To be able to geolocate users, just add the following option in the features list of the Dial Once TAG in the global _dialonceQ variable, by adding this line of code in the JS snippet: 
 
 {% highlight javascript %}
-_dialonceQ._enableFeatures = ['Geoloc'];
+_dialonce.enableFeatures = ['Geoloc'];
 {% endhighlight %}
