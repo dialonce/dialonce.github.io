@@ -25,6 +25,7 @@ Installation & Setup
   - [Gradle](#gradle-recommanded)
   - [Maven](#maven)
 5.  [Proguard](#proguard)
+6.  [Options](#options)
 
 ### Introduction
 
@@ -133,6 +134,14 @@ Since DialOnce is already minified, please use these rules to not obsfuscate the
 -keep class com.dialonce.** { *; }
 {% endhighlight %}
 
+### Options
+
+The Dial Once SDK exposes methods to give you the ability to fully enable or disable the interception flow.  
+We recommand to always give the user some control about Dial Once.
+You can use the following line of code with true or false as parameter (true to enable, false to disable):
+{% highlight java %}
+DialOnce.setEnableCallInterception(true);
+{% endhighlight %}
 
 Reporting Bugs or Feature Requests
 ----------------------------------
