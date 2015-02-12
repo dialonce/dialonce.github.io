@@ -31,7 +31,7 @@ How much does it weigh?
 
 Currently, the Dial Once SDK weighs *54KB* without dependencies. Once fully integrated (dependencies are fetched automatically) the total weight is *64KB*.
 
-Note that this is indicative and may change in the near future, as we are constantly adding new features and making updates.
+> This is indicative and may change in the near future, as we are constantly adding new features and making updates.
 
 How to integrate the SDK into your app?
 ---------------------------------------
