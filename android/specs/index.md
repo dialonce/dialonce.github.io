@@ -9,7 +9,7 @@ Android SDK Specifications
 ### Table of Contents
 
 1.	[How it works](#how-does-it-work)
-2.	[SDK Weight](#how-much-does-it-weigh)
+2.	[SDK Weight](#what-is-the-footprint-on-your-application)
 3.	[Integrating the SDK](#how-to-integrate-the-sdk-into-your-app)
 4.	[Available platforms](#on-which-platform-is-the-dial-once-sdk-available)
 5.	[Permissions](#which-permissions-are-required)
@@ -26,31 +26,27 @@ Dial Once uses these intents to launch itself and to perform tasks such as displ
 
 > Dial Once does not run in the background and does not turn your app into a battery-killer
 
-How much does it weigh?
------------------------
+What is the footprint on your application?
+------------------------------------------
 
-Currently, the Dial Once SDK weighs *54KB* without dependencies. Once fully integrated (dependencies are fetched automatically) the total weight is *64KB*.
+Currently, the Dial Once SDK has a size of *54KB* without dependencies. Once fully integrated (dependencies are fetched automatically) the total footprint is *64KB*.
 
-> This is indicative and may change in the near future, as we are constantly adding new features and making updates.
+> This is indicative and may change in the near future as we are constantly updating and adding new features.
 
 How to integrate the SDK into your app?
 ---------------------------------------
 
-Installing the SDK is simple, as all you are adding is a single line of code. You can find a more technical explanation on [the SDK page](/android/howto).
+Installing the SDK is simple as all you are adding is a single line of code. You can find a more technical explanation on [the SDK page](/android/howto).
 
 On which platform is the Dial Once SDK available?
 -------------------------------------------------
 
-We provide the SDK for Android. iOS and WP8 are coming soon.
+The SDK is available for Android. iOS and WP8 are coming soon.
 
 Which permissions are required?
 -------------------------------
 
-We use advanced features of the Android platform so permissions are required.
-
-> You do not need to modify your app or add permissions since the SDK does it automatically.
-
-Permissions are:
+We use advanced features of the Android platform so permissions are required:
 
 -	`android.permission.INTERNET`
 -	`android.permission.ACCESS_NETWORK_STATE`
@@ -60,3 +56,5 @@ Permissions are:
 -	`android.permission.ACCESS_FINE_LOCATION`
 -	`android.permission.ACCESS_COARSE_LOCATION`
 -	`com.android.launcher.permission.INSTALL_SHORTCUT`
+
+> You do not need to modify your app or add permissions since the SDK does it automatically.
