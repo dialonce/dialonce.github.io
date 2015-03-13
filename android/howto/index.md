@@ -62,7 +62,7 @@ Finally, add the following line to your application class in the `onCreate` meth
 
 #### Maven
 
-The aar dependency requires the use of the `maven-android-plugin 3.8.1+` with `maven 3.1.1+`.
+The aar dependency requires the use of the `maven-android-plugin 4.+` with `maven 3.+`.
 
 Maven repositories can be declared both in the global `settings.xml` and in projects `pom.xml` files. The pros and cons of the two approaches are largely debatable (e.g. [Why Putting Repositories in your POMs is a Bad Idea](http://www.sonatype.com/people/2009/02/why-putting-repositories-in-your-poms-is-a-bad-idea/)).
 
@@ -70,7 +70,7 @@ Maven repositories can be declared both in the global `settings.xml` and in proj
 
 Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 
-{% highlight xml %}<dependency> <groupId>com.dialonce</groupId> <artifactId>dialonce-android</artifactId> <version>1.2.2</version> <type>aar</type></dependency> {% endhighlight %}
+{% highlight xml %}<dependency> <groupId>com.dialonce</groupId> <artifactId>dialonce-android</artifactId> <version>1.4.4</version> <type>aar</type></dependency> {% endhighlight %}
 
 Finally, add the following line to your application class in the `onCreate` method.
 
