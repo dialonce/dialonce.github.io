@@ -40,7 +40,7 @@ Before you start, be sure you have the following prerequisites:
 
 ### Android versions
 
-The Dial Once Android SDK supports Android 2.2+ (API Level 8) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min), but it must be compiled using Android 4.4 (API Level 20) or above as the [targetSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#target).
+The Dial Once Android SDK supports Android 2.2+ (API Level 8) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min).
 
 ### Installation
 
@@ -143,7 +143,9 @@ The Dial Once SDK exposes methods that give you the ability to fully enable or d
 
 You can use the following line of code with true or false as parameter (true to enable, false to disable):
 
-{% highlight java %} DialOnce.setEnableCallInterception(true); {% endhighlight %}
+{% highlight java %} 
+DialOnce.setEnableCallInterception(true); 
+{% endhighlight %}
 
 Reporting Bugs or Feature Requests
 ----------------------------------
