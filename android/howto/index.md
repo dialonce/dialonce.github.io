@@ -133,7 +133,7 @@ Since DialOnce is already minified, please use these rules to not obfuscate the 
 Insert the following rules into your proguard config file:
 
 {% highlight yaml %} 
--keep class com.dialonce.\** { *; } 
+-keep class com.dialonce.** { *; } 
 -keep class com.android.internal.telephony.ITelephony { *; } 
 {% endhighlight %}
 
