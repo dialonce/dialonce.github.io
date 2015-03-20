@@ -35,7 +35,7 @@ This document will guide you through the integration of the the Dial Once SDK in
 
 Before you start, be sure you have the following prerequisites:
 
--	You need your Dial Once api key and secret
+-	You need your Dial Once api key
 -	The [Android SDK](http://developer.android.com/sdk/index.html) Bundle already installed and configured on your system
 
 ### Android versions
@@ -50,15 +50,27 @@ Depending on your build system, the setup might be slightly different.
 
 The best way to install the Dial Once SDK for Android is to use gradle and jcenter. First add jcenter to your list of Maven repositories, if needed.
 
-{% highlight javascript %} allprojects { repositories { jcenter() } } {% endhighlight %}
+{% highlight javascript %} 
+allprojects { 
+  repositories { 
+    jcenter() 
+  } 
+} 
+{% endhighlight %}
 
 Then, add the Dial Once SDK as a project dependency.
 
-{% highlight javascript %} dependencies { compile 'com.dialonce:dialonce-android:+' } {% endhighlight %}
+{% highlight javascript %} 
+dependencies { 
+  compile 'com.dialonce:dialonce-android:+' 
+} 
+{% endhighlight %}
 
 Finally, add the following line to your application class in the `onCreate` method.
 
-{% highlight java %} DialOnce.init(this, "your_api_key_here"); {% endhighlight %}
+{% highlight java %} 
+DialOnce.init(this, "your_api_key_here"); 
+{% endhighlight %}
 
 #### Maven
 
@@ -66,15 +78,53 @@ The aar dependency requires the use of the `maven-android-plugin 4.+` with `mave
 
 Maven repositories can be declared both in the global `settings.xml` and in projects `pom.xml` files. The pros and cons of the two approaches are largely debatable (e.g. [Why Putting Repositories in your POMs is a Bad Idea](http://www.sonatype.com/people/2009/02/why-putting-repositories-in-your-poms-is-a-bad-idea/)).
 
-{% highlight xml %}<profiles> <profile> <id>bintray</id> <repositories> <repository> <snapshots> <enabled>false</enabled> </snapshots> <id>central</id> <name>bintray</name> <url>http://jcenter.bintray.com/</url> </repository> </repositories> <pluginRepositories> <pluginRepository> <snapshots> <enabled>false</enabled> </snapshots> <id>central</id> <name>bintray-plugins</name> <url>http://jcenter.bintray.com/</url> </pluginRepository> </pluginRepositories> </profile></profiles><activeProfiles> <activeProfile>bintray</activeProfile></activeProfiles> {% endhighlight %}
+{% highlight xml %}
+<profiles> 
+  <profile> 
+    <id>bintray</id> 
+    <repositories> 
+      <repository> 
+        <snapshots> 
+          <enabled>false</enabled> 
+        </snapshots> 
+        <id>central</id> 
+        <name>bintray</name> 
+        <url>http://jcenter.bintray.com/</url> 
+      </repository> 
+    </repositories> 
+    <pluginRepositories> 
+      <pluginRepository> 
+        <snapshots> 
+          <enabled>false</enabled> 
+        </snapshots> 
+        <id>central</id> 
+        <name>bintray-plugins</name> 
+        <url>http://jcenter.bintray.com/</url> 
+      </pluginRepository> 
+    </pluginRepositories> 
+  </profile>
+</profiles>
+<activeProfiles> 
+  <activeProfile>bintray</activeProfile>
+</activeProfiles> 
+{% endhighlight %}
 
 Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 
-{% highlight xml %}<dependency> <groupId>com.dialonce</groupId> <artifactId>dialonce-android</artifactId> <version>1.4.4</version> <type>aar</type></dependency> {% endhighlight %}
+{% highlight xml %}
+<dependency> 
+  <groupId>com.dialonce</groupId> 
+  <artifactId>dialonce-android</artifactId> 
+  <version>1.4.4</version> 
+  <type>aar</type>
+</dependency> 
+{% endhighlight %}
 
 Finally, add the following line to your application class in the `onCreate` method.
 
-{% highlight java %} DialOnce.init(this, "your_api_key_here"); {% endhighlight %}
+{% highlight java %} 
+DialOnce.init(this, "your_api_key_here"); 
+{% endhighlight %}
 
 ### ProGuard
 
@@ -82,7 +132,10 @@ Since DialOnce is already minified, please use these rules to not obfuscate the 
 
 Insert the following rules into your proguard config file:
 
-{% highlight yaml %} -keep class com.dialonce.\** { *; } -keep class com.android.internal.telephony.ITelephony { *; } {% endhighlight %}
+{% highlight yaml %} 
+-keep class com.dialonce.\** { *; } 
+-keep class com.android.internal.telephony.ITelephony { *; } 
+{% endhighlight %}
 
 ### Options
 
