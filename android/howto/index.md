@@ -5,7 +5,7 @@ published: true
 ---
 
 Android SDK Documentation
-===================================
+=========================
 
 [![Download](https://api.bintray.com/packages/dialonce/maven/dialonce-android/images/download.svg) ](https://bintray.com/dialonce/maven/dialonce-android/_latestVersion)
 
@@ -136,12 +136,6 @@ Insert the following rules into your proguard config file:
 -keep class com.dialonce.** { *; } 
 -keep class com.android.internal.telephony.ITelephony { *; } 
 {% endhighlight %}
-
-### Options
-
-The Dial Once SDK exposes methods that give you the ability to fully enable or disable the interception flow. We recommend to always give the user some control on the Dial Once SDK (for example, a section in the parameters of your app).
-
-You can use the following line of code with true or false as parameter (true to enable, false to disable):
 
 {% highlight java %} 
 DialOnce.setEnableCallInterception(true); 
