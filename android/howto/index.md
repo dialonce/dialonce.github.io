@@ -72,7 +72,7 @@ Finally, add the following line to your application class in the `onCreate` meth
 DialOnce.init(this, "your_api_key_here"); 
 {% endhighlight %}
 
-#### Maven
+#### Maven (skip this step if you are using gradle)
 
 The aar dependency requires the use of the `maven-android-plugin 4.+` with `maven 3.+`.
 
