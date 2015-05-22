@@ -137,10 +137,6 @@ Insert the following rules into your proguard config file:
 -keep class com.android.internal.telephony.ITelephony { *; } 
 {% endhighlight %}
 
-{% highlight java %} 
-DialOnce.setEnableCallInterception(true); 
-{% endhighlight %}
-
 Reporting Bugs or Feature Requests
 ----------------------------------
 
