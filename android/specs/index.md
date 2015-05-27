@@ -53,8 +53,7 @@ We use advanced features of the Android platform so permissions are required:
 -	`android.permission.CALL_PHONE`
 -	`android.permission.PROCESS_OUTGOING_CALLS`
 -	`android.permission.READ_PHONE_STATE`
--	`android.permission.ACCESS_FINE_LOCATION`
--	`android.permission.ACCESS_COARSE_LOCATION`
+-	`android.permission.VIBRATE`
 -	`com.android.launcher.permission.INSTALL_SHORTCUT`
 
 > You do not need to modify your app or add permissions since the SDK does it automatically.
