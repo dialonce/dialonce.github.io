@@ -29,7 +29,7 @@ Dial Once uses these intents to launch itself and to perform tasks such as displ
 What is the footprint on your application?
 ------------------------------------------
 
-Currently, the Dial Once SDK has a total footprint of *64KB* without dependencies.
+Currently, the Dial Once SDK has a total footprint of *64KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
