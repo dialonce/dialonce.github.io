@@ -115,7 +115,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency> 
   <groupId>com.dialonce</groupId> 
   <artifactId>dialonce-android</artifactId> 
-  <version>1.6.0</version> 
+  <version>2.1.2</version> 
   <type>aar</type>
 </dependency> 
 {% endhighlight %}
@@ -135,6 +135,7 @@ Insert the following rules into your proguard config file:
 {% highlight yaml %} 
 -keep class com.dialonce.** { *; } 
 -keep class com.android.internal.telephony.ITelephony { *; } 
+-dontwarn okio.**
 {% endhighlight %}
 
 Reporting Bugs or Feature Requests
