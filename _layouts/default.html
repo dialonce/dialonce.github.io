@@ -15,7 +15,7 @@
 	<div class="wrapper">
 		{%include header.html%}
 		{% assign index = nil %}
-		{% if page.url != "/index.html" %}
+		{% if page.url != "/index.html" and page.url != "/" %}
 			{% assign current = 'markdown-body' %}
 		{% else %}
 			{% assign current = 'home-body' %}
