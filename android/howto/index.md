@@ -115,7 +115,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency> 
   <groupId>com.dialonce</groupId> 
   <artifactId>dialonce-android</artifactId> 
-  <version>2.1.2</version> 
+  <version>2.2.2</version> 
   <type>aar</type>
 </dependency> 
 {% endhighlight %}
