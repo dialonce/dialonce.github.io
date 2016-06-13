@@ -37,10 +37,38 @@ The snippet above represents the minimum configuration needed to use the TAG asy
 
 ### TAG Options
 
-#### Geolocation
+#### Query Selector
 
-To be able to geolocate users, just add the following option in the features list of the Dial Once TAG in the global _dialonceQ variable, by adding this line of code in the JS snippet: 
+You can choose a target specific elements to improve performances. If you do this only specific elements will be parsed. In order to do this, you can add one or multiple CSS selector(s):
+
+
+**Specific block**
+{% highlight javascript %}
+_dialonce.querySelector = '#contact-block';
+{% endhighlight %}
+
+**Multiple CSS selectors**
+{% highlight javascript %}
+_dialonce.querySelector = '.contact-zone a.number, .contact-zone button.number';
+{% endhighlight %}
+
+**Simple CSS selector**
+{% highlight javascript %}
+_dialonce.querySelector = 'a.phone-number';
+{% endhighlight %}
+
+#### Devices
+
+You can choose on which kind of devices the SDK will be enabled, by adding or removing property of the following parameter:
 
 {% highlight javascript %}
-_dialonce.enableFeatures = ['Geoloc'];
+_dialonce.devices = ['Mobile', 'Tablet', 'Desktop'];
+{% endhighlight %}
+
+#### Geolocation
+
+To be able to geolocate users, just add the following option in the features list of the Dial Once SDK in the global _dialonce variable, by adding this line of code in the JS snippet:
+
+{% highlight javascript %}
+_dialonce.features = ['Geolocation'];
 {% endhighlight %}
