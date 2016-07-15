@@ -19,10 +19,10 @@ To begin using the `Dial Once TAG`, paste the following JavaScript snippet into 
 <script type="text/javascript">
     var _dialonce = _dialonce || {};
     _dialonce.token = 'XXX-XXX-XXX-XXX';
-    _dialonce.enableDevices = ['Mobile'];
+    _dialonce.devices = ['Mobile'];
     (function() {
         var dialonce = document.createElement('script');
-        dialonce.id = 'dialonce-sdk'
+        dialonce.id = 'dialonce-sdk';
         dialonce.type = 'text/javascript';
         dialonce.async = true;
         dialonce.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'd3ayv6nsn4rwn3.cloudfront.net/js/dialonce.min.js';
