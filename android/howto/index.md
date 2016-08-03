@@ -141,6 +141,4 @@ Insert the following rules into your proguard config file:
 Reporting Bugs or Feature Requests
 ----------------------------------
 
-Please report any bugs or feature requests on the github issues page for this project here:
-
-[https://github.com/dial-once/dialonce-android-sdk/issues](https://github.com/dial-once/dialonce-android-sdk/issues)
+To report a bug or make a feature request, send us a mail to [publishers@dial-once.com](mailto:publishers@dial-once.com)
