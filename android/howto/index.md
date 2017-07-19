@@ -40,7 +40,7 @@ Before you start, be sure you have the following prerequisites:
 
 ### Android versions
 
-The Dial Once Android SDK supports Android 2.2+ (API Level 8) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min).
+The Dial Once Android SDK supports Android 2.3+ (API Level 9) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min).
 
 ### Installation
 
@@ -115,7 +115,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency> 
   <groupId>com.dialonce</groupId> 
   <artifactId>dialonce-android</artifactId> 
-  <version>2.3.1</version> 
+  <version>2.6.4</version> 
   <type>aar</type>
 </dependency> 
 {% endhighlight %}

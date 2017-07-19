@@ -32,24 +32,23 @@ Dial Once uses these intents to launch itself and to perform tasks such as displ
 What is the footprint on your application?
 ------------------------------------------
 
-Currently (as of v2.3.1), the Dial Once SDK has a total weight of *149KB*.
+Currently (as of v2.6.4), the Dial Once SDK has a total weight of *155KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
 What are the underlying dependencies?
 ------------------------------------------
 
-Current version (v2.3.1) have the following dependency tree:
+Current version (v2.6.4) has the following dependency tree:
 {% highlight md %}
 +--- com.bugsnag:bugsnag-android:3.4.+ -> 3.4.0
-|    \--- com.android.support:support-annotations:23.1.1
-+--- com.google.code.gson:gson:2.6.+ -> 2.6.2
-+--- io.socket:socket.io-client:0.7.0
-|    \--- io.socket:engine.io-client:0.7.0
-+--- com.squareup.okhttp3:okhttp:3.3.1
-|    \--- com.squareup.okio:okio:1.8.0
-\--- com.squareup.okhttp3:okhttp-ws:3.3.1
-     \--- com.squareup.okhttp3:okhttp:3.3.1 (*)
+|    \--- com.android.support:support-annotations:23.1.1 -> 25.2.0
++--- com.google.code.gson:gson:2.8.+ -> 2.8.1
++--- com.squareup.okhttp3:okhttp:3.8.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.socket:socket.io-client:0.8.3
+|    \--- io.socket:engine.io-client:0.8.3
+\--- com.android.support:support-v4:25.2.0
 {% endhighlight %}
 
 How to integrate the SDK into your app?
@@ -65,7 +64,7 @@ The SDK is available for Android. iOS and WP8 are coming soon.
 What are the supported Android versions?
 -------------------------------------------------
 
-We support Android version 8 and more.
+We support Android API version 9 and more.
 
 Which permissions are required?
 -------------------------------
