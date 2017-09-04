@@ -24,8 +24,9 @@ Installation & Setup
 4.	[Installation](#installation)
 	-	[Gradle](#gradle-recommanded)
 	-	[Maven](#maven)
-5.	[Proguard](#proguard)
-6.	[Options](#options)
+5.	[Request Runtime Permissions](#request-runtime-permissions)
+6.	[Proguard](#proguard)
+7.	[Options](#options)
 
 ### Introduction
 
@@ -125,6 +126,27 @@ Finally, add the following line to your application class in the `onCreate` meth
 {% highlight java %} 
 DialOnce.init(this, "your_api_key_here"); 
 {% endhighlight %}
+
+### Request Runtime Permissions
+
+Beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app. 
+
+To request permissions you can simply call:
+
+{% highlight java %} 
+DialOnce.requestPermissions(activity); 
+{% endhighlight %}
+
+In case if you app have own permissions handling, you can simply request permissins below [with Android API](https://developer.android.com/training/permissions/requesting.html):
+
+ - `Manifest.permission.CALL_PHONE`
+ - `Manifest.permission.READ_PHONE_STATE`
+ - `Manifest.permission.PROCESS_OUTGOING_CALLS`
+
+In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling `Dialonce.onRequestPermissionsResult` which have a similar signature as 
+[`Activity.onRequestPermissionsResult`](https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int, java.lang.String[], int[]))
+
+Without these permissions, the SDK will not able to work properly.
 
 ### ProGuard
 
