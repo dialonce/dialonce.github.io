@@ -160,6 +160,18 @@ Insert the following rules into your proguard config file:
 -dontwarn okio.**
 {% endhighlight %}
 
+### Troubleshooting
+
+__Conflict with dependency 'com.google.code.findbugs:jsr305'__<br>
+This means that your project contains `com.google.code.findbugs:jsr305` dependencies with different versions.
+To fix this you can break transitive relationship like this:
+
+{% highlight groovy %}
+compile ('com.dialonce:dialonce-android:1.2.3') {
+  exclude group: 'com.google.code.findbugs'
+}
+{% endhighlight %}
+
 Reporting Bugs or Feature Requests
 ----------------------------------
 
