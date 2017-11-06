@@ -163,6 +163,9 @@ Insert the following rules into your proguard config file:
 ### Troubleshooting
 
 __Conflict with dependency 'com.google.code.findbugs:jsr305'__<br>
+
+| **SDK version** | 2.6.4 and above |
+
 This means that your project contains `com.google.code.findbugs:jsr305` dependencies with different versions.
 To fix this you can break transitive relationship like this:
 
@@ -174,9 +177,17 @@ compile ('com.dialonce:dialonce-android:1.2.3') {
 
 __Unable to start receiver com.dialonce.sdk.PhoneCallReceiver: java.lang.IllegalStateException: DialOnce library not initialized! Call DialOnce.init() method first!__<br>
 
+| **SDK version** | 2.6.0 and above |
+
 Once you have added SDK dependency to your android project important to call `DialOnce.init` in `Application.onCreate` even if you wanna to disable SDK, otherwise it will lead to this crash. 
 
 To disable SDK you may use `DialOnce.setEnableCallInterception(false)`.
+
+__Unable to start receiver com.dialonce.sdk.PhoneCallReceiver: java.lang.IllegalStateException: Android OS Issue. Application class should be initialized beforeBroadcastReceiver__<br>
+
+| **SDK version** | 2.6.5 |
+
+The same issue as above related to missing `DialOnce.init` in `Application.onCreate`
 
 Reporting Bugs or Feature Requests
 ----------------------------------
