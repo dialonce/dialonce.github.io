@@ -17,7 +17,7 @@ Android SDK Specifications
 7.  [Permissions](#which-permissions-are-required)
 8.  [SDK Communications](#how-data-is-transmitted)
 
-## How does it work?
+### How does it work?
 
 The Dial Once SDK is integrated in your app and only runs during one of these actions:
 
