@@ -172,6 +172,12 @@ compile ('com.dialonce:dialonce-android:1.2.3') {
 }
 {% endhighlight %}
 
+__Unable to start receiver com.dialonce.sdk.PhoneCallReceiver: java.lang.IllegalStateException: DialOnce library not initialized! Call DialOnce.init() method first!__<br>
+
+Once you have added SDK dependency to your android project important to call `DialOnce.init` in `Application.onCreate` even if you wanna to disable SDK, otherwise it will lead to this crash. 
+
+To disable SDK you may use `DialOnce.setEnableCallInterception(false)`.
+
 Reporting Bugs or Feature Requests
 ----------------------------------
 
