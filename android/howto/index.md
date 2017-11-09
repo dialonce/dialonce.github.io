@@ -170,14 +170,14 @@ This means that your project contains `com.google.code.findbugs:jsr305` dependen
 To fix this you can break transitive relationship like this:
 
 {% highlight groovy %}
-compile ('com.dialonce:dialonce-android:1.2.3') {
+compile ('com.dialonce:dialonce-android:2.6.6') {
   exclude group: 'com.google.code.findbugs'
 }
 {% endhighlight %}
 
 __Unable to start receiver com.dialonce.sdk.PhoneCallReceiver: java.lang.IllegalStateException: DialOnce library not initialized! Call DialOnce.init() method first!__<br>
 
-| **SDK version** | 2.6.0 and above |
+| **SDK version** | [2.6.0, 2.6.5] |
 
 Once you have added SDK dependency to your android project important to call `DialOnce.init` in `Application.onCreate` even if you wanna to disable SDK, otherwise it will lead to this crash. 
 

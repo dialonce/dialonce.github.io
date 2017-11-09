@@ -32,14 +32,14 @@ Dial Once uses these intents to launch itself and to perform tasks such as displ
 What is the footprint on your application?
 ------------------------------------------
 
-Currently (as of v2.6.5), the Dial Once SDK has a total weight of *164KB*.
+Currently (as of v2.6.6), the Dial Once SDK has a total weight of *164KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
 What are the underlying dependencies?
 ------------------------------------------
 
-Current version (v2.6.5) has the following dependency tree:
+Current version (v2.6.6) has the following dependency tree:
 {% highlight md %}
 +--- com.bugsnag:bugsnag-android:3.4.+ -> 3.4.0
 |    \--- com.android.support:support-annotations:23.1.1 -> 25.2.0
