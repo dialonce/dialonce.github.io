@@ -39,11 +39,15 @@ The Dial Once SDK is brought in automatically. There is no need to change or add
 
 ### Cordova
 
+| **Supported Cordova versions** | 4.0.0 and above |
+
 To install the plugin in your Cordova app, run the following command:
 
     $ cordova plugin add cordova-plugin-dialonce --variable ANDROID_API_KEY="<ANDROID_API_KEY>"
 
 ### PhoneGap
+
+| **Supported PhoneGap versions** | 4.0.0 and above |
 
 To add the plugin to your PhoneGap app, add the following snippet to your `config.xml`:
 
