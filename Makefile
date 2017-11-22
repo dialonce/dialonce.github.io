@@ -1,4 +1,4 @@
-prereq:
+deps:
 	gem install bundler	
 	bundle install
 

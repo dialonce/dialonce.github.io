@@ -170,7 +170,7 @@ This means that your project contains `com.google.code.findbugs:jsr305` dependen
 To fix this you can break transitive relationship like this:
 
 {% highlight groovy %}
-compile ('com.dialonce:dialonce-android:2.6.6') {
+compile ('com.dialonce:dialonce-android:2.6.7') {
   exclude group: 'com.google.code.findbugs'
 }
 {% endhighlight %}
@@ -188,6 +188,12 @@ __Unable to start receiver com.dialonce.sdk.PhoneCallReceiver: java.lang.Illegal
 | **SDK version** | 2.6.5 |
 
 The same issue as above related to missing `DialOnce.init` in `Application.onCreate`
+
+__java.lang.NoSuchMethodError: No static method getSerial()Ljava/lang/String__<br>
+
+| **SDK version** | [2.6.5, 2.6.6] |
+
+Affect devices with of Android 7.x and above, fixed in 2.6.7
 
 Reporting Bugs or Feature Requests
 ----------------------------------
