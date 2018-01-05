@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dial Once Android SDK Specifications
+title: Dial-Once Android SDK Specifications
 ---
 
 Android SDK Specifications
@@ -19,20 +19,20 @@ Android SDK Specifications
 
 ### How does it work?
 
-The Dial Once SDK is integrated in your app and only runs during one of these actions:
+The Dial-Once SDK is integrated in your app and only runs during one of these actions:
 
 1.  Calling a number
 2.  Connecting the phone to a power supply
 3.  Connecting to the internet
 
-Dial Once uses these intents to launch itself and to perform tasks such as displaying the customer service interface or updating its local database. Then it shuts itself down and frees up the memory until the next action.
+Dial-Once uses these intents to launch itself and to perform tasks such as displaying the customer service interface or updating its local database. Then it shuts itself down and frees up the memory until the next action.
 
-> Dial Once does not run in the background and does not turn your app into a battery-killer
+> Dial-Once does not run in the background and does not turn your app into a battery-killer
 
 What is the footprint on your application?
 ------------------------------------------
 
-Currently (as of v2.6.7), the Dial Once SDK has a total weight of *223KB*.
+Currently (as of v2.6.7), the Dial-Once SDK has a total weight of *223KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
@@ -57,7 +57,7 @@ How to integrate the SDK into your app?
 
 Installing the SDK is simple as all you are adding is a single line of code. You can find a more technical explanation on [the SDK page](/android/howto).
 
-On which platform is the Dial Once SDK available?
+On which platform is the Dial-Once SDK available?
 -------------------------------------------------
 
 The SDK is available for Android. iOS and WP8 are coming soon.
@@ -88,9 +88,9 @@ We use advanced features of the Android platform so permissions are required:
 > You do not need to modify your app or add permissions since the SDK does it automatically.
 
 
-How data is transmitted to Dial Once?
+How data is transmitted to Dial-Once?
 -------------------------------
 
 We only transfer anonymous user data over secured TCP connections (wss and https).
-As soon as we check that the device is up to date with our database, we put the device to sleep through a socket secured channel connection, and all communications with Dial Once are stopped for a large amount of time: not consuming the user battery.
+As soon as we check that the device is up to date with our database, we put the device to sleep through a socket secured channel connection, and all communications with Dial-Once are stopped for a large amount of time: not consuming the user battery.
 Each user have a token that can be revoked anytime server side.
