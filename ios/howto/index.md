@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dial Once iOS SDK Documentation
+title: Dial-Once iOS SDK Documentation
 published: true
 ---
 
@@ -9,7 +9,7 @@ iOS SDK Documentation
 
 [Download](https://cocoapods.org/pods/DialOnce)
 
-This document will guide you through the integration of the Dial Once SDK for iOS.
+This document will guide you through the integration of the Dial-Once SDK for iOS.
 
 Installation & Setup
 --------------------
@@ -26,13 +26,13 @@ Installation & Setup
 
 Before you start, be sure you have the following prerequisites:
 
--	You need your Dial Once api key
+-	You need your Dial-Once api key
 -	[Xcode](https://developer.apple.com/download/) Bundle already installed and configured on your system
 - Currently our SDK tested only with `swift 4`. Integration with `objective-c`, may works also but it's not guaranteed
 
 ### Supported versions
 
-The Dial Once SDK for iOS supports iOS 8.0 as deployment target
+The Dial-Once SDK for iOS supports iOS 8.0 as deployment target
 
 ### Installation
 
@@ -40,7 +40,7 @@ Depending on your package manager, the setup might be slightly different.
 
 #### Cocoa Pods
 
-Straightforward way To install the Dial Once SDK for iOS is to use `CocoaPods` as package manager. Just add `DialOnce` pod to your target
+Straightforward way To install the Dial-Once SDK for iOS is to use `CocoaPods` as package manager. Just add `DialOnce` pod to your target
 
 {% highlight ruby %}
 target 'MyTargetApp' do
@@ -51,7 +51,7 @@ end
 
 Finally, add the following line to your application delegate class in the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application) method.
 
-{% highlight swift %} 
+{% highlight swift %}
 DialOnce.setupWithApiKey(AppDelegate.apiKey)
 {% endhighlight %}
 

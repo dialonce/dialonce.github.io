@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Dial Once Cordova plugin Documentation
+title: Dial-Once Cordova plugin Documentation
 published: true
 ---
 
-Dial Once Cordova plugin Documentation
+Dial-Once Cordova plugin Documentation
 =========================
 
-This is a plugin that allows your Cordova or PhoneGap app to easily integrate the Dial Once SDK. https://www.npmjs.com/package/cordova-plugin-dialonce
+This is a plugin that allows your Cordova or PhoneGap app to easily integrate the Dial-Once SDK. https://www.npmjs.com/package/cordova-plugin-dialonce
 
 Supported platforms:
  - Android
@@ -30,12 +30,12 @@ Installation & Setup
 
 Before you start, be sure you have the following prerequisites:
 
--   You need your Dial Once API key
+-   You need your Dial-Once API key
 -   [Cordova](https://cordova.apache.org/docs/en/latest/guide/cli/) or [PhoneGap](http://docs.phonegap.com/getting-started/1-install-phonegap/cli/)  must be installed
 
 ## Installation
 
-The Dial Once SDK is brought in automatically. There is no need to change or add anything in your code source. 
+The Dial-Once SDK is brought in automatically. There is no need to change or add anything in your code source.
 
 ### Cordova
 
@@ -93,7 +93,7 @@ Install the dialonce-cordova plugin by executing:
 
 ## API
 
-Dial-Once SDK works as an autonomous component. One thing which needs to be done is to request for permissions. This can be done by `navigator.dialonce.requestPermissions()` call. 
+Dial-Once SDK works as an autonomous component. One thing which needs to be done is to request for permissions. This can be done by `navigator.dialonce.requestPermissions()` call.
 
 This is important becuase beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app. And without these permissions, the SDK will not able to work properly.
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dial Once Android SDK Documentation
+title: Dial-Once Android SDK Documentation
 published: true
 ---
 
@@ -9,7 +9,7 @@ Android SDK Documentation
 
 [![Download](https://api.bintray.com/packages/dialonce/maven/dialonce-android/images/download.svg) ](https://bintray.com/dialonce/maven/dialonce-android/_latestVersion)
 
-This document will guide you through the integration of the Dial Once SDK for Android.
+This document will guide you through the integration of the Dial-Once SDK for Android.
 
 You can find more information about the Android SDK [on the dedicated page](/android/specs).
 
@@ -30,18 +30,18 @@ Installation & Setup
 
 ### Introduction
 
-This document will guide you through the integration of the the Dial Once SDK in an application.
+This document will guide you through the integration of the the Dial-Once SDK in an application.
 
 ### Prerequisites
 
 Before you start, be sure you have the following prerequisites:
 
--	You need your Dial Once api key
+-	You need your Dial-Once api key
 -	The [Android SDK](http://developer.android.com/sdk/index.html) Bundle already installed and configured on your system
 
 ### Android versions
 
-The Dial Once Android SDK supports Android 2.3+ (API Level 9) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min).
+The Dial-Once Android SDK supports Android 2.3+ (API Level 9) as the [minSdkVersion](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#min).
 
 ### Installation
 
@@ -49,28 +49,28 @@ Depending on your build system, the setup might be slightly different.
 
 #### Gradle (recommended)
 
-The best way to install the Dial Once SDK for Android is to use gradle and jcenter. First add jcenter to your list of Maven repositories, if needed.
+The best way to install the Dial-Once SDK for Android is to use gradle and jcenter. First add jcenter to your list of Maven repositories, if needed.
 
-{% highlight javascript %} 
-allprojects { 
-  repositories { 
-    jcenter() 
-  } 
-} 
+{% highlight javascript %}
+allprojects {
+  repositories {
+    jcenter()
+  }
+}
 {% endhighlight %}
 
-Then, add the Dial Once SDK as a project dependency.
+Then, add the Dial-Once SDK as a project dependency.
 
-{% highlight javascript %} 
-dependencies { 
-  compile 'com.dialonce:dialonce-android:+' 
-} 
+{% highlight javascript %}
+dependencies {
+  compile 'com.dialonce:dialonce-android:+'
+}
 {% endhighlight %}
 
 Finally, add the following line to your application class in the `onCreate` method.
 
-{% highlight java %} 
-DialOnce.init(this, "your_api_key_here"); 
+{% highlight java %}
+DialOnce.init(this, "your_api_key_here");
 {% endhighlight %}
 
 #### Maven (skip this step if you are using gradle)
@@ -80,61 +80,61 @@ The aar dependency requires the use of the `maven-android-plugin 4.+` with `mave
 Maven repositories can be declared both in the global `settings.xml` and in projects `pom.xml` files. The pros and cons of the two approaches are largely debatable (e.g. [Why Putting Repositories in your POMs is a Bad Idea](http://www.sonatype.com/people/2009/02/why-putting-repositories-in-your-poms-is-a-bad-idea/)).
 
 {% highlight xml %}
-<profiles> 
-  <profile> 
-    <id>bintray</id> 
-    <repositories> 
-      <repository> 
-        <snapshots> 
-          <enabled>false</enabled> 
-        </snapshots> 
-        <id>central</id> 
-        <name>bintray</name> 
-        <url>http://jcenter.bintray.com/</url> 
-      </repository> 
-    </repositories> 
-    <pluginRepositories> 
-      <pluginRepository> 
-        <snapshots> 
-          <enabled>false</enabled> 
-        </snapshots> 
-        <id>central</id> 
-        <name>bintray-plugins</name> 
-        <url>http://jcenter.bintray.com/</url> 
-      </pluginRepository> 
-    </pluginRepositories> 
+<profiles>
+  <profile>
+    <id>bintray</id>
+    <repositories>
+      <repository>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>
+        <id>central</id>
+        <name>bintray</name>
+        <url>http://jcenter.bintray.com/</url>
+      </repository>
+    </repositories>
+    <pluginRepositories>
+      <pluginRepository>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>
+        <id>central</id>
+        <name>bintray-plugins</name>
+        <url>http://jcenter.bintray.com/</url>
+      </pluginRepository>
+    </pluginRepositories>
   </profile>
 </profiles>
-<activeProfiles> 
+<activeProfiles>
   <activeProfile>bintray</activeProfile>
-</activeProfiles> 
+</activeProfiles>
 {% endhighlight %}
 
 Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 
 {% highlight xml %}
-<dependency> 
-  <groupId>com.dialonce</groupId> 
-  <artifactId>dialonce-android</artifactId> 
-  <version>2.6.5</version> 
+<dependency>
+  <groupId>com.dialonce</groupId>
+  <artifactId>dialonce-android</artifactId>
+  <version>2.6.5</version>
   <type>aar</type>
-</dependency> 
+</dependency>
 {% endhighlight %}
 
 Finally, add the following line to your application class in the `onCreate` method.
 
-{% highlight java %} 
-DialOnce.init(this, "your_api_key_here"); 
+{% highlight java %}
+DialOnce.init(this, "your_api_key_here");
 {% endhighlight %}
 
 ### Request Runtime Permissions
 
-Beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app. 
+Beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app.
 
 To request permissions you can simply call:
 
-{% highlight java %} 
-DialOnce.requestPermissions(activity); 
+{% highlight java %}
+DialOnce.requestPermissions(activity);
 {% endhighlight %}
 
 In case if you app have own permissions handling, you can simply request permissins below [with Android API](https://developer.android.com/training/permissions/requesting.html):
@@ -143,7 +143,7 @@ In case if you app have own permissions handling, you can simply request permiss
  - `Manifest.permission.READ_PHONE_STATE`
  - `Manifest.permission.PROCESS_OUTGOING_CALLS`
 
-In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling `Dialonce.onRequestPermissionsResult` which have a similar signature as 
+In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling `Dialonce.onRequestPermissionsResult` which have a similar signature as
 [`Activity.onRequestPermissionsResult`](https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int, java.lang.String[], int[]))
 
 Without these permissions, the SDK will not able to work properly.
@@ -154,9 +154,9 @@ Since DialOnce is already minified, please use these rules to not obfuscate the 
 
 Insert the following rules into your proguard config file:
 
-{% highlight yaml %} 
--keep class com.dialonce.** { *; } 
--keep class com.android.internal.telephony.ITelephony { *; } 
+{% highlight yaml %}
+-keep class com.dialonce.** { *; }
+-keep class com.android.internal.telephony.ITelephony { *; }
 -dontwarn okio.**
 {% endhighlight %}
 
@@ -179,7 +179,7 @@ __Unable to start receiver com.dialonce.sdk.PhoneCallReceiver: java.lang.Illegal
 
 | **SDK version** | [2.6.0, 2.6.5] |
 
-Once you have added SDK dependency to your android project important to call `DialOnce.init` in `Application.onCreate` even if you wanna to disable SDK, otherwise it will lead to this crash. 
+Once you have added SDK dependency to your android project important to call `DialOnce.init` in `Application.onCreate` even if you wanna to disable SDK, otherwise it will lead to this crash.
 
 To disable SDK you may use `DialOnce.setEnableCallInterception(false)`.
 
