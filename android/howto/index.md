@@ -25,8 +25,9 @@ Installation & Setup
 	-	[Gradle](#gradle-recommanded)
 	-	[Maven](#maven)
 5.	[Request Runtime Permissions](#request-runtime-permissions)
-6.	[Proguard](#proguard)
-7.	[Options](#options)
+6.	[Disable SDK](#enable--disable-sdk-at-run-time)
+7.	[Proguard](#proguard)
+8.	[Options](#options)
 
 ### Introduction
 
@@ -147,6 +148,23 @@ In case if you will request permissions directly via Android API you are respons
 [`Activity.onRequestPermissionsResult`](https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int, java.lang.String[], int[]))
 
 Without these permissions, the SDK will not able to work properly.
+
+### Enable / Disable SDK at Run-time
+
+Sometimes you need to turn off / on SDK by some conditions, there is several API to do this:
+
+ - `DialOnce.disable()`
+ - `DialOnce.setEnableCallInterception(boolean)`
+
+From end user point of view they both behave the same. Difference in the implementation details:
+
+ - `DialOnce.disable()` - will disable BroadcastReceiver till next restart of the app. SDK will not get any dialer's intents, as result SDK will not perform call digitization.
+ - `DialOnce.setEnableCallInterception(boolean)` - SDK will continue listen dialer's intents and collect analytics, but will not perform call digitization.
+
+To rollback `DialOnce.disable()` app need to be restarted.
+To rollback `DialOnce.setEnableCallInterception(false)` app just need to call `DialOnce.setEnableCallInterception(true)`
+
+So `DialOnce.setEnableCallInterception(boolean)` much preferred to be able perform DialOnce SDK disabling
 
 ### ProGuard
 
