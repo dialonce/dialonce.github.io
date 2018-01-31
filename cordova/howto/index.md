@@ -97,6 +97,8 @@ Dial-Once SDK works as an autonomous component. One thing which needs to be done
 
 This is important becuase beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app. And without these permissions, the SDK will not able to work properly.
 
+Also you can disable/enable SDK in run-time with `navigator.dialonce.setEnableCallInterception(boolean)` current state of SDK you can get from `navigator.dialonce.isCallInterceptionEnabled`. SDK didn't persist this state between app restart, once app started and SDK initialized it always ready to work: `navigator.dialonce.isCallInterceptionEnabled -> true`.
+
 Reporting Bugs or Feature Requests
 ----------------------------------
 
