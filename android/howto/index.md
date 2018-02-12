@@ -117,7 +117,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency>
   <groupId>com.dialonce</groupId>
   <artifactId>dialonce-android</artifactId>
-  <version>2.6.8</version>
+  <version>2.6.9</version>
   <type>aar</type>
 </dependency>
 {% endhighlight %}
@@ -212,6 +212,12 @@ __java.lang.NoSuchMethodError: No static method getSerial()Ljava/lang/String__<b
 | **SDK version** | [2.6.5, 2.6.6] |
 
 Affect devices with of Android 7.x and above, fixed in 2.6.7
+
+__Broken deep-link handling__<br>
+
+| **SDK version** | 2.6.8 and below |
+
+Issue related to passing URI params in `Intent`'s data
 
 Reporting Bugs or Feature Requests
 ----------------------------------
