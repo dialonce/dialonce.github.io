@@ -26,8 +26,9 @@ Installation & Setup
 	-	[Maven](#maven)
 5.	[Request Runtime Permissions](#request-runtime-permissions)
 6.	[Disable SDK](#enable--disable-sdk-at-run-time)
-7.	[Proguard](#proguard)
-8.	[Options](#options)
+7.  [Environment switch](#environment-switch)
+8.	[Proguard](#proguard)
+9.	[Options](#options)
 
 ### Introduction
 
@@ -144,7 +145,7 @@ In case if you app have own permissions handling, you can simply request permiss
  - `Manifest.permission.READ_PHONE_STATE`
  - `Manifest.permission.PROCESS_OUTGOING_CALLS`
 
-In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling `Dialonce.onRequestPermissionsResult` which have a similar signature as
+In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling [`Dialonce.onRequestPermissionsResult`](/android/javadoc/) which have a similar signature as
 [`Activity.onRequestPermissionsResult`](https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int, java.lang.String[], int[]))
 
 Without these permissions, the SDK will not able to work properly.
@@ -153,8 +154,8 @@ Without these permissions, the SDK will not able to work properly.
 
 Sometimes you need to turn off / on SDK by some conditions, there is several API to do this:
 
- - `DialOnce.disable()`
- - `DialOnce.setEnableCallInterception(boolean)`
+ - [`DialOnce.disable()`](/android/javadoc/)
+ - [`DialOnce.setEnableCallInterception(boolean)`](/android/javadoc/)
 
 From end user point of view they both behave the same. Difference in the implementation details:
 
@@ -165,6 +166,12 @@ To rollback `DialOnce.disable()` app need to be restarted.
 To rollback `DialOnce.setEnableCallInterception(false)` app just need to call `DialOnce.setEnableCallInterception(true)`
 
 So `DialOnce.setEnableCallInterception(boolean)` much preferred to be able perform DialOnce SDK disabling
+
+### Environment switch
+
+There is posible to switch between production and staging environemnt during which can be useful during development:
+
+ - [`DialOnce.useLiveEnvironment(boolean)`](/android/javadoc/)
 
 ### ProGuard
 
