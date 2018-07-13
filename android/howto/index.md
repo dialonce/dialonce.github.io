@@ -118,7 +118,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency>
   <groupId>com.dialonce</groupId>
   <artifactId>dialonce-android</artifactId>
-  <version>2.6.11</version>
+  <version>2.6.12</version>
   <type>aar</type>
 </dependency>
 {% endhighlight %}
@@ -225,6 +225,12 @@ __Broken deep-link handling__<br>
 | **SDK version** | 2.6.8 and below |
 
 Issue related to passing URI params in `Intent`'s data
+
+__Broken digitization disablig__<br>
+
+| **SDK version** | 2.6.11  |
+
+Regression issue
 
 Reporting Bugs or Feature Requests
 ----------------------------------
