@@ -77,7 +77,7 @@ DialOnce.init(this, "your_api_key_here");
 
 #### Maven (skip this step if you are using gradle)
 
-The aar dependency requires the use of the `maven-android-plugin 4.+` with `maven 3.+`.
+The `aar` dependency requires the use of the `maven-android-plugin 4.+` with `maven 3.+`.
 
 Maven repositories can be declared both in the global `settings.xml` and in projects `pom.xml` files. The pros and cons of the two approaches are largely debatable (e.g. [Why Putting Repositories in your POMs is a Bad Idea](http://www.sonatype.com/people/2009/02/why-putting-repositories-in-your-poms-is-a-bad-idea/)).
 
@@ -118,7 +118,7 @@ Then, inside the `<dependencies>` tag, add the following code to the `pom.xml`:
 <dependency>
   <groupId>com.dialonce</groupId>
   <artifactId>dialonce-android</artifactId>
-  <version>2.6.12</version>
+  <version>2.6.13</version>
   <type>aar</type>
 </dependency>
 {% endhighlight %}
@@ -166,12 +166,6 @@ To rollback `DialOnce.disable()` app need to be restarted.
 To rollback `DialOnce.setEnableCallInterception(false)` app just need to call `DialOnce.setEnableCallInterception(true)`
 
 So `DialOnce.setEnableCallInterception(boolean)` much preferred to be able perform DialOnce SDK disabling
-
-### Environment switch
-
-There is posible to switch between production and staging environemnt during which can be useful during development:
-
- - [`DialOnce.useLiveEnvironment(boolean)`](/android/javadoc/)
 
 ### ProGuard
 
