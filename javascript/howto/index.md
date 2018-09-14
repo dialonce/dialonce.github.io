@@ -32,3 +32,21 @@ To begin using the `Dial-Once TAG`, paste the following JavaScript snippet into 
 {% endhighlight %}
 
 The snippet above represents the minimum configuration needed to use the TAG asynchronously.
+
+#### RequireJS
+
+If you are using the [RequireJS framework](https://requirejs.org/) on your website, you need to use the following snippet instead.
+
+{% highlight javascript %}
+<script type="text/javascript">
+    var _dialonce = _dialonce || {};
+    _dialonce.token = 'XXX-XXX-XXX-XXX';
+		// additional context for dynamic config
+    _dialonce.contextMetadata = {
+        some: 'thing'
+    };
+
+    requirejs.config({ paths: { dialonce: '//d3ayv6nsn4rwn3.cloudfront.net/js/dialonce.min' } });
+    require(['dialonce'], function() {});
+</script>
+{% endhighlight %}
