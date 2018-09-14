@@ -19,24 +19,22 @@ Installation & Setup
 1.	[Prerequisites](#prerequisites)
 2.	[Supported versions](#android-versions)
 3.	[Installation](#installation)
-	-	[Pod](#pod)
-  - [Carthage](#carthage)
+	- [Pod](#pod)
+    - [Carthage](#carthage)
 
 ### Prerequisites
 
 Before you start, be sure you have the following prerequisites:
 
--	You need your Dial-Once api key
--	[Xcode](https://developer.apple.com/download/) Bundle already installed and configured on your system
-- Currently our SDK tested only with `swift 4`. Integration with `objective-c`, may works also but it's not guaranteed
+- You need your Dial-Once api key
+- [Xcode](https://developer.apple.com/download/) Bundle already installed and configured on your system
+- Currently our SDK tested with `swift 4`, `swift 3.2` and `objective-c`
 
 ### Supported versions
 
-The Dial-Once SDK for iOS supports iOS 8.0 as deployment target
+The Dial-Once SDK for iOS supports iOS 8.0 as deployment target and we distribute SDK as static library + headers
 
 ### Installation
-
-Depending on your package manager, the setup might be slightly different.
 
 #### Cocoa Pods
 
@@ -55,10 +53,8 @@ Finally, add the following line to your application delegate class in the [`appl
 DialOnce.setupWithApiKey(AppDelegate.apiKey)
 {% endhighlight %}
 
+Now your app is ready! For more information you can look at `DialOnce.h` 
+
 #### Carthage
 
-Because our SDK distributed as fat framework, to integrate with `Carthage` you can simply get specific release
-
-```
-binary "https://github.com/dial-once/sdk-ios-pod/archive/1.0.0.zip"
-```
+Not supported at this moment
