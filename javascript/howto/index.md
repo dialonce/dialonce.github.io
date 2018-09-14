@@ -41,12 +41,20 @@ If you are using the [RequireJS framework](https://requirejs.org/) on your websi
 <script type="text/javascript">
     var _dialonce = _dialonce || {};
     _dialonce.token = 'XXX-XXX-XXX-XXX';
-		// additional context for dynamic config
-    _dialonce.contextMetadata = {
-        some: 'thing'
-    };
 
-    requirejs.config({ paths: { dialonce: '//d3ayv6nsn4rwn3.cloudfront.net/js/dialonce.min' } });
-    require(['dialonce'], function() {});
+    // additional context for dynamic config
+    // _dialonce.contextMetadata = {
+    //    some: 'thing'
+    // };
+
+    requirejs.config({
+        paths: {
+            dialonce: '//d3ayv6nsn4rwn3.cloudfront.net/js/dialonce.min'
+        }
+    });
+
+    setTimeout(function() {
+        require(['dialonce'],function() {});
+    }, 100);
 </script>
 {% endhighlight %}
