@@ -99,6 +99,10 @@ This is important becuase beginning in Android 6.0 (API level 23), users grant p
 
 Also you can disable/enable SDK in run-time with `navigator.dialonce.setEnableCallInterception(boolean)` current state of SDK you can get from `navigator.dialonce.isCallInterceptionEnabled`. SDK didn't persist this state between app restart, once app started and SDK initialized it always ready to work: `navigator.dialonce.isCallInterceptionEnabled -> true`.
 
+### Debugging
+
+During the development process (especially for hybrid apps) WebView debugging ability is very important. But our SDK use WebView by itself, and it's very important for us to not allow debugging WebView debugging by default. To control it you can use `navigator.dialonce.setDebug (true | false)`, by default it's false even for debug build
+
 Reporting Bugs or Feature Requests
 ----------------------------------
 
