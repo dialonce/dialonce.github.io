@@ -139,13 +139,9 @@ To request permissions you can simply call:
 DialOnce.requestPermissions(activity);
 {% endhighlight %}
 
-In case if you app have own permissions handling, you can simply request permissins below [with Android API](https://developer.android.com/training/permissions/requesting.html):
+In case if you app have own permissions handling, you can simply request permissins below [with Android API](https://developer.android.com/training/permissions/requesting.html), list of permissions which need by SDK listed in `DialOnce.PERMISSIONS`
 
- - `Manifest.permission.CALL_PHONE`
- - `Manifest.permission.READ_PHONE_STATE`
- - `Manifest.permission.PROCESS_OUTGOING_CALLS`
-
-In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling [`Dialonce.onRequestPermissionsResult`](/android/javadoc/) which have a similar signature as
+In case if you will request permissions directly via Android API you are responsible to notify SDK about results by calling [`DialOnce.onRequestPermissionsResult`](/android/javadoc/) which have a similar signature as
 [`Activity.onRequestPermissionsResult`](https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int, java.lang.String[], int[]))
 
 Without these permissions, the SDK will not able to work properly.
