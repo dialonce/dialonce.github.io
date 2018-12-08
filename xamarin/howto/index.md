@@ -50,7 +50,7 @@ The best way to install the Dial-Once SDK for Xamarin is to use nuget packet man
 OR by modifying `packages.config`
 
 {% highlight xml %}
-<package id="DialOnce.Android" version="2.6.15" targetFramework="monoandroid60" requireReinstallation="true" />
+<package id="DialOnce.Android" version="2.6.16" targetFramework="monoandroid60" requireReinstallation="true" />
 {% endhighlight %}
 
 Finally, add the following line to your Application class in the `onCreate` method.
