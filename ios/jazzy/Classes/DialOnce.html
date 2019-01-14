@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DialOnce Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DialOnce" class="dashAnchor"></a>
+    <a title="DialOnce Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">DialOnce Docs</a></p>
+        <p class="header-right"><a href="https://github.com/dial-once/sdk-ios-pod"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Flocalhost%3A4000%2Fios%2Fjazzy%2Fdocsets%2FDialOnce%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">DialOnce Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DialOnce Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DialOnce.html">DialOnce</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DialOnceVersionNumber">DialOnceVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DialOnceVersionString">DialOnceVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DOLogLevel.html">DOLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)DOServiceLocator">DOServiceLocator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DialOnce</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DialOnce</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Facade for DialOnce SDK functionality</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(py)intercaptableUrlSchemes"></a>
+                    <a name="//apple_ref/objc/Property/intercaptableUrlSchemes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(py)intercaptableUrlSchemes">intercaptableUrlSchemes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interceptable schemes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span>
+    <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">intercaptableUrlSchemes</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">intercaptableUrlSchemes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(cm)sharedInstance"></a>
+                    <a name="//apple_ref/objc/Method/+sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(cm)sharedInstance">+sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup service for handling phone calls from application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">sharedInstance</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sharedInstance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>instance of DialOnce</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(cm)setupWithApiKey:"></a>
+                    <a name="//apple_ref/objc/Method/+setupWithApiKey:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(cm)setupWithApiKey:">+setupWithApiKey:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup service for handling phone calls from application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setupWithApiKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">apiKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">withApiKey</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key for api</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(cm)setupWithApiKey:logLevel:isServiceEnabled:servicesLocator:"></a>
+                    <a name="//apple_ref/objc/Method/+setupWithApiKey:logLevel:isServiceEnabled:servicesLocator:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(cm)setupWithApiKey:logLevel:isServiceEnabled:servicesLocator:">+setupWithApiKey:logLevel:isServiceEnabled:servicesLocator:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup service for handling phone calls from application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setupWithApiKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">apiKey</span>
+               <span class="nf">logLevel</span><span class="p">:(</span><span class="n"><a href="../Enums/DOLogLevel.html">DOLogLevel</a></span><span class="p">)</span><span class="nv">logLevel</span>
+       <span class="nf">isServiceEnabled</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isServiceEnabled</span>
+        <span class="nf">servicesLocator</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)DOServiceLocator">DOServiceLocator</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">servicesLocator</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">withApiKey</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/DOLogLevel.html">DOLogLevel</a></span><span class="p">,</span> <span class="nv">isServiceEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">servicesLocator</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:objc(pl)DOServiceLocator">DOServiceLocator</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key for api</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logLevel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Level for logs see DOLogLevelError</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isServiceEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Should enable service or not, by default is true</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>servicesLocator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Servie config must be empty for production apps</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)initWithApiKey:isServiceEnabled:servicesLocator:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithApiKey:isServiceEnabled:servicesLocator:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)initWithApiKey:isServiceEnabled:servicesLocator:">-initWithApiKey:isServiceEnabled:servicesLocator:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internal method for service initialization</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithApiKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">apiKey</span>
+                       <span class="nf">isServiceEnabled</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">serviceEnabled</span>
+                        <span class="nf">servicesLocator</span><span class="p">:</span>
+                            <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)DOServiceLocator">DOServiceLocator</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">serviceLocator</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">isServiceEnabled</span> <span class="nv">serviceEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">servicesLocator</span> <span class="nv">serviceLocator</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:objc(pl)DOServiceLocator">DOServiceLocator</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key for api</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Should enable service or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>DialOnce instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)displayScreenEngineForPhoneNumber:action:callUid:"></a>
+                    <a name="//apple_ref/objc/Method/-displayScreenEngineForPhoneNumber:action:callUid:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)displayScreenEngineForPhoneNumber:action:callUid:">-displayScreenEngineForPhoneNumber:action:callUid:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display custom screen for handling phone call</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">displayScreenEngineForPhoneNumber</span><span class="p">:(</span><span class="n">nonnull</span> <span class="k">const</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">phoneNumber</span>
+                                   <span class="nf">action</span><span class="p">:(</span><span class="n">nonnull</span> <span class="k">const</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">action</span>
+                                  <span class="nf">callUid</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">callUid</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayScreenEngine</span><span class="p">(</span><span class="n">forPhoneNumber</span> <span class="nv">phoneNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">callUid</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>phoneNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>phoneNumber which was called</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Action, that shows .OutgoingCall or .PostOutgoingCall by default will be .OutgoingCall</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callUid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>id for call</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)setServiceEnabledCheck:"></a>
+                    <a name="//apple_ref/objc/Method/-setServiceEnabledCheck:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)setServiceEnabledCheck:">-setServiceEnabledCheck:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable/disable service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">setServiceEnabledCheck</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setServiceEnabledCheck</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>new state of service</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>@YES if service state was successfully changed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)isServiceEnabledCheck"></a>
+                    <a name="//apple_ref/objc/Method/-isServiceEnabledCheck" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)isServiceEnabledCheck">-isServiceEnabledCheck</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if service was enabled and methods swizzled</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isServiceEnabledCheck</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isServiceEnabledCheck</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>@YES if service enabled, @NO if not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)unlockPhoneNumbersWithPassword:callback:"></a>
+                    <a name="//apple_ref/objc/Method/-unlockPhoneNumbersWithPassword:callback:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)unlockPhoneNumbersWithPassword:callback:">-unlockPhoneNumbersWithPassword:callback:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unlock phone number for digitization</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unlockPhoneNumbersWithPassword</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">password</span>
+                              <span class="nf">callback</span><span class="p">:</span>
+                                  <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unlockPhoneNumbers</span><span class="p">(</span><span class="n">withPassword</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">callback</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>password to unlock</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>called once unlock operation was finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)lockPhoneNumbersWithCallback:"></a>
+                    <a name="//apple_ref/objc/Method/-lockPhoneNumbersWithCallback:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)lockPhoneNumbersWithCallback:">-lockPhoneNumbersWithCallback:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disable digitiztion for phone numbers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lockPhoneNumbersWithCallback</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lockPhoneNumbers</span><span class="p">(</span><span class="n">callback</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>called once unlock operation was finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)displayInterstitial"></a>
+                    <a name="//apple_ref/objc/Method/-displayInterstitial" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)displayInterstitial">-displayInterstitial</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display Interstitial</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">displayInterstitial</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayInterstitial</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)deviceId"></a>
+                    <a name="//apple_ref/objc/Method/-deviceId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)deviceId">-deviceId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier for device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">deviceId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deviceId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Unique identifier in String format</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)sdkVersion"></a>
+                    <a name="//apple_ref/objc/Method/-sdkVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)sdkVersion">-sdkVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get SDK version</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">sdkVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sdkVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>SDK version</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DialOnce(im)forceSync"></a>
+                    <a name="//apple_ref/objc/Method/-forceSync" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DialOnce(im)forceSync">-forceSync</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sent analytics data for processing</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">forceSync</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">forceSync</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/dial-once" target="_blank" rel="external">The Dial-Once Team</a>. All rights reserved. (Last updated: 2018-12-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

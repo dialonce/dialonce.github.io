@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes/DOServiceLocator.h",
+      "line": 13,
+      "symbol": "DOServiceLocator.pushURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes/DOServiceLocator.h",
+      "line": 14,
+      "symbol": "DOServiceLocator.apiURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes/DOServiceLocator.h",
+      "line": 15,
+      "symbol": "DOServiceLocator.appURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes/DOServiceLocator.h",
+      "line": 16,
+      "symbol": "DOServiceLocator.useSSL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes/DOServiceLocator.h",
+      "line": 20,
+      "symbol": "DOStagingServiceLocator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes/DOServiceLocator.h",
+      "line": 22,
+      "symbol": "DOProductionServiceLocator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/camobap/Developers/Projects/dial-once/sdk-ios/SDK/Classes"
+}
