@@ -53,8 +53,12 @@ Finally, add the following line to your application delegate class in the [`appl
 DialOnce.setupWithApiKey(AppDelegate.apiKey)
 {% endhighlight %}
 
+{% highlight objc %}
+[DialOnce setupWithApiKey:DIALONCE_API_KEY];
+{% endhighlight %}
+
 Now your app is ready! For more information you can look at `DialOnce.h` 
 
 #### Carthage
 
-Not supported at this moment
+Planed for next release, till this you can download framework archive wich contains prebuilt `DialOnce.framework` 
