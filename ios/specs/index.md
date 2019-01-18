@@ -61,4 +61,7 @@ Now your app is ready! For more information you can look at `DialOnce.h`
 
 #### Carthage
 
-Planed for next release, till this you can download framework archive wich contains prebuilt `DialOnce.framework` 
+Just add line to your `Cartfile`
+
+```
+github "dial-once/sdk-ios-releases" ~> 0.1.3
