@@ -65,3 +65,4 @@ Just add line to your `Cartfile`
 
 ```
 github "dial-once/sdk-ios-releases" ~> 0.1.3
+```
