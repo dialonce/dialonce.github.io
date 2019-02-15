@@ -64,5 +64,5 @@ Now your app is ready! For more information you can look at `DialOnce.h`
 Just add line to your `Cartfile`
 
 ```
-github "dial-once/sdk-ios-releases" ~> 0.1.3
+github "dial-once/sdk-ios-releases" ~> 0.2.0
 ```
