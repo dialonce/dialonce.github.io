@@ -32,7 +32,7 @@ Before you start, be sure you have the following prerequisites:
 
 ### Supported versions
 
-The Dial-Once SDK for iOS supports iOS 8.0 as deployment target and we distribute SDK as static library + headers
+The Dial-Once SDK for iOS supports iOS 8.0+ as deployment target and we distribute SDK as `DialOnce.framework`
 
 ### Installation
 
