@@ -33,24 +33,23 @@ Dial-Once uses these intents to launch itself and to perform tasks such as displ
 What is the footprint on your application?
 ------------------------------------------
 
-Currently (as of v2.6.16), the Dial-Once SDK has a total weight of *176KB*.
+Currently (as of v2.6.17), the Dial-Once SDK has a total weight of *180KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
 What are the underlying dependencies?
 ------------------------------------------
 
-Current version (v2.6.16) has the following dependency tree:
+Current version (v2.6.17) has the following dependency tree:
 {% highlight md %}
 
 +--- com.bugsnag:bugsnag-android:3.9.0
 |    \--- com.android.support:support-annotations:25.3.1 -> 25.4.0
 +--- com.google.code.gson:gson:2.8.5
-+--- com.squareup.okhttp3:okhttp:3.11.0
-|    \--- com.squareup.okio:okio:1.14.0
++--- com.squareup.okhttp3:okhttp:3.12.1
+|    \--- com.squareup.okio:okio:1.15.0
 +--- io.socket:socket.io-client:1.0.0
 |    \--- io.socket:engine.io-client:1.0.0
-+--- com.google.code.findbugs:jsr305:3.0.2
 \--- com.android.support:support-v4:25.4.0
 
 {% endhighlight %}
