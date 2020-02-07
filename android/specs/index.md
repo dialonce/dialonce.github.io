@@ -33,14 +33,14 @@ Dial-Once uses these intents to launch itself and to perform tasks such as displ
 What is the footprint on your application?
 ------------------------------------------
 
-Currently (as of v2.6.17), the Dial-Once SDK has a total weight of *180KB*.
+Currently (as of v3.0.1), the Dial-Once SDK has a total weight of *78KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
 What are the underlying dependencies?
 ------------------------------------------
 
-Current version (v2.6.17) has the following dependency tree:
+Current version (v3.0.1) has the following dependency tree:
 {% highlight md %}
 
 +--- com.bugsnag:bugsnag-android:3.9.0
@@ -48,9 +48,7 @@ Current version (v2.6.17) has the following dependency tree:
 +--- com.google.code.gson:gson:2.8.5
 +--- com.squareup.okhttp3:okhttp:3.12.1
 |    \--- com.squareup.okio:okio:1.15.0
-+--- io.socket:socket.io-client:1.0.0
-|    \--- io.socket:engine.io-client:1.0.0
-\--- com.android.support:support-v4:25.4.0
++--- com.android.support:support-v4:25.4.0
 
 {% endhighlight %}
 
@@ -77,6 +75,8 @@ We use advanced features of the Android platform so permissions are required:
 - `android.permission.INTERNET`
 - `android.permission.ACCESS_NETWORK_STATE`
 - `android.permission.CALL_PHONE`
+- `android.permission.READ_CALL_LOG`
+- `android.permission.ANSWER_PHONE_CALLS`
   - Allows us to initiate a phone call without going through the Dialer
 - `android.permission.PROCESS_OUTGOING_CALLS`
   - Allows us to modify or abort outgoing calls (used to display our interfaces)
