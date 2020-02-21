@@ -33,22 +33,34 @@ Dial-Once uses these intents to launch itself and to perform tasks such as displ
 What is the footprint on your application?
 ------------------------------------------
 
-Currently (as of v3.0.2), the Dial-Once SDK has a total weight of *78KB*.
+Currently (as of v3.0.4), the Dial-Once SDK has a total weight of *78KB*.
 
 > This is indicative and may change in the near future as we are constantly updating and adding new features.
 
 What are the underlying dependencies?
 ------------------------------------------
 
-Current version (v3.0.2) has the following dependency tree:
+Current version (v3.0.4) has the following dependency tree:
 {% highlight md %}
 
 +--- com.bugsnag:bugsnag-android:3.9.0
++--- com.bugsnag:bugsnag-android:[3.6.0,4.0.0[ -> 3.9.0
 |    \--- com.android.support:support-annotations:25.3.1 -> 25.4.0
-+--- com.google.code.gson:gson:2.8.5
-+--- com.squareup.okhttp3:okhttp:3.12.1
++--- com.google.code.gson:gson:[2.6.0, 2.8.6[ -> 2.8.5
++--- com.squareup.okhttp3:okhttp:[3.5.0,3.13[ -> 3.12.8
 |    \--- com.squareup.okio:okio:1.15.0
 +--- com.android.support:support-v4:25.4.0
++--- com.bugsnag:bugsnag-android:{strictly 3.9.0} -> 3.9.0 (c)
++--- com.google.code.gson:gson:{strictly 2.8.5} -> 2.8.5 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 3.12.8} -> 3.12.8 (c)
++--- com.android.support:support-v4:{strictly 25.4.0} -> 25.4.0 (c)
++--- com.android.support:support-annotations:{strictly 25.4.0} -> 25.4.0 (c)
++--- com.squareup.okio:okio:{strictly 1.15.0} -> 1.15.0 (c)
++--- com.android.support:support-compat:{strictly 25.4.0} -> 25.4.0 (c)
++--- com.android.support:support-media-compat:{strictly 25.4.0} -> 25.4.0 (c)
++--- com.android.support:support-core-utils:{strictly 25.4.0} -> 25.4.0 (c)
++--- com.android.support:support-core-ui:{strictly 25.4.0} -> 25.4.0 (c)
+\--- com.android.support:support-fragment:{strictly 25.4.0} -> 25.4.0 (c)
 
 {% endhighlight %}
 
