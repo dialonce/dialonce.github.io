@@ -27,8 +27,7 @@ Installation & Setup
 5.	[Request Runtime Permissions](#request-runtime-permissions)
 6.	[Disable SDK](#enable--disable-sdk-at-run-time)
 7.  [Environment switch](#environment-switch)
-8.	[Proguard](#proguard)
-9.	[Options](#options)
+8.	[Options](#options)
 
 ### Introduction
 
@@ -170,9 +169,8 @@ Since DialOnce is already minified, please use these rules to not obfuscate the 
 Insert the following rules into your proguard config file:
 
 {% highlight yaml %}
--keep class com.dialonce.** { *; }
--keep class com.android.internal.telephony.ITelephony { *; }
--dontwarn okio.**
+-dontwarn org.conscrypt.**
+-dontwarn android.telecom.TelecomManager
 {% endhighlight %}
 
 ### Troubleshooting
